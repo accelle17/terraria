@@ -1,5 +1,5 @@
-FROM arm32v7/alpine:3.11.6 AS base
-RUN cat /etc/apk/repositories
+FROM alpine:3.11.6 AS base
+
 RUN apk add --update-cache \
     unzip
 
